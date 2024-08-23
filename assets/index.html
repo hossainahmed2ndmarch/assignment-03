@@ -2,33 +2,127 @@
 <html lang="en">
 
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Rinterio</title>
- <!-- Tailwind CSS -->
- <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rinterio</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
- <!-- Daisy UI -->
- <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
- <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Daisy UI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
- <!-- Google fonts -->
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
- <!-- Font awesome -->
- <script src="https://kit.fontawesome.com/1c8fd1686e.js" crossorigin="anonymous"></script>
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/1c8fd1686e.js" crossorigin="anonymous"></script>
 
- <style>
-  .font-manrope {
-   font-family: "Manrope", sans-serif;
-  }
- </style>
+  <style>
+    .font-manrope {
+      font-family: "Manrope", sans-serif;
+    }
+  </style>
 </head>
 
 <body class="font-manrope">
+  <!-- Header part -->
+  <header class="container mx-auto px-5 py-8 md:p-8 bg-gradient-to-r from-white to-slate-100">
+    <nav>
+      <div class="navbar">
+        <div class="navbar-start">
+          <button class="btn btn-ghost text-4xl text-[#212121] font-extrabold">
+            <div class="w-8 h-8 flex items-center justify-center rounded-full bg-[#ABEF5F]"><svg
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+              </svg>
+            </div>
+            Rinterio
+          </button>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="hover:font-extrabold text-[#494949] hover:text-[#ABEF5F]">Home</a></li>
+            <li><a class="text-[#737373] hover:text-[#ABEF5F]">Services</a></li>
+            <li><a class="text-[#737373] hover:text-[#ABEF5F]">Portfolio</a></li>
+            <li><a class="text-[#737373] hover:text-[#ABEF5F]">Blogs</a></li>
+            <li><a class="text-[#737373] hover:text-[#ABEF5F]">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end space-x-3">
+          <div class="p-3 flex items-center invisible md:visible justify-center rounded-full bg-[#FFFFFF]"><i
+              class="fa-solid fa-magnifying-glass text-[#737373] hover:text-[#ABEF5F]"></i>
+          </div>
+          <div
+            class="p-3 flex items-center justify-center rounded-full bg-[#FFFFFF] text-[#737373] invisible md:visible hover:text-[#ABEF5F]">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
 
+          <button
+            class="btn rounded-[32px] flex items-center justify-center space-x-2 text-xl font-extrabold bg-[#ABEF5F] invisible md:visible">
+            <a href="">Book Consult</a>
+            <div class="w-8 h-8 flex items-center justify-center rounded-full bg-black text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+              </svg>
+            </div>
+          </button>
+          <div class="dropdown">
+            <div tabindex="0" role="button"
+              class="btn rounded-full bg-[#FFFFFF] btn-ghost text-[#737373] hover:text-[#ABEF5F] lg:hidden">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul tabindex="0"
+              class="menu menu-sm dropdown-content right-0 bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li><a class="font-bold text-[#424247] hover:text-[#FF4240]">Home</a></li>
+              <li><a class="text-[#424247] hover:text-[#FF4240]">About</a></li>
+              <li><a class="text-[#424247] hover:text-[#FF4240]">Pages</a></li>
+              <li><a class="text-[#424247] hover:text-[#FF4240]">Blog</a></li>
+              <li><a class="text-[#424247] hover:text-[#FF4240]">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Banner -->
+    <div>
+      <!-- Image -->
+      <div class="flex items-center justify-center px-14 mb-12">
+        <img src="./banner.png" alt="">
+      </div>
+      <!-- Text -->
+      <div class="flex flex-col items-center justify-center text-center mx-10 space-y-6">
+        <h2 class="text-3xl md:text-4xl lg:text-6xl font-extrabold">A barn house of this design has a striking appearance</h2>
+        <p class="font-medium text-[#494949]">The barn house captivates with its blend of rustic charm and modern
+          sophistication, featuring weathered wood,
+          sleek metal <br>
+          accents, and large windows that flood the space with natural light.</p>
+        <button class="btn w-full border-[1px] md:w-[210px] border-[#ABEF5F] rounded-[32px] flex items-center justify-center space-x-2 text-xl font-bold bg-[#ABEF5F80]">
+          <a href="">View Details</a>
+          <div class="w-8 h-8 flex items-center justify-center rounded-full bg-[#ABEF5F] text-black">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main part -->
+  <main>
+
+  </main>
+
+  <!-- Footer part -->
+  <footer>
+
+  </footer>
 </body>
 
 </html>
